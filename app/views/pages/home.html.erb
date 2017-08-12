@@ -1,7 +1,16 @@
 <h1>Homepage</h1>
 <p>Find me in app/views/pages/home.html.erb</p>
+<hr>
+<br>
 
+<h2>Blog Posts</h2>
 <% @posts.each do |p| %>
-<%= "Title: " + p.title + ", " %>
-<%= "Body: " + p.body %>
+<p><%= "Title: " + p.title + ", " %>
+<%= "Body: " + p.body %></p>
+<% end %>
+<hr>
+
+<h2>Skills</h2>
+<% @skills.each do |s| %>
+<p><%= s.title + ": " + s.percent_utilized.to_s %></p>
 <% end %>
