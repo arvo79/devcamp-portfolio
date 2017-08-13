@@ -7,10 +7,9 @@
 <h2>Portfolios</h2>
 <% @portfolios.each do |portfolio| %>
 	<p>
-		<%= url_for(portfolio.thumb_image) %>
-		<%= portfolio.title + ", " + portfolio.subtitle %>
+		<%= link_to image_tag("http://via.placeholder.com/100x50"), "https://placeholder.com" %>
+		<%= portfolio.title + ", " + portfolio.subtitle + ", " + portfolio.body %>
 	</p>
-	<p><%= portfolio.body %></p>
 <% end %>
 <hr>
 
