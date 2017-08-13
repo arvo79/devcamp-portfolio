@@ -1,9 +1,12 @@
 <h2>Portfolio Items</h2>
 <hr>
+<p><%= link_to 'Pages-Home', pages_home_path %>
+<%= link_to 'Blogs', blogs_path %></p>
+<%= link_to 'Create a new Portfolio Item', new_portfolio_path %>
 <br>
 
 <% @portfolio_items.each do |portfolio_item| %>
-	<p><%= image_tag(portfolio_item.thumb_image) %>
+	<p><%= link_to image_tag(portfolio_item.thumb_image), portfolio_path(portfolio_item) unless portfolio_item.thumb_image.nil? %>
 	<%= portfolio_item.title %>
 	<%= portfolio_item.subtitle %>
 	<%= portfolio_item.body %></p>

@@ -21,8 +21,8 @@ puts "5 skills created"
 		title: "Portfolio No #{portfolio+1}",
 		subtitle: "Subtitle No #{portfolio+1}",
 		body: "Description No #{portfolio+1}",
-		main_image: "http://placehold.it/600x400",
-		thumb_image: "http://placehold.it/350x200"
+		main_image: "http://placehold.it/350x200",
+		thumb_image: "http://placehold.it/100x50"
 	)
 end
 
