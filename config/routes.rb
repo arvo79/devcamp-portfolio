@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 	
-  root 'blogs#index'
+  root 'portfolios#index'
 
   resources :blogs
   resources :portfolios

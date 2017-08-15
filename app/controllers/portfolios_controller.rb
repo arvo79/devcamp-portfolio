@@ -31,7 +31,7 @@ class PortfoliosController < ApplicationController
 	def update
 		respond_to do |format|
 			if @portfolio_item.update(portfolio_params)
-				format.html { redirect_to @portfolio_item, notice: "Your Portfolio Item has been created." }
+				format.html { redirect_to @portfolio_item, notice: "Your Portfolio Item has been updated." }
 			else
 				format.html { render :edit }
 			end
@@ -39,6 +39,11 @@ class PortfoliosController < ApplicationController
 	end
 
 	def destroy
+		@portfolio_item.destroy
+		respond_to do |format|
+			format.html { redirect_to portfolios_path, notice: "Your Portfolio Item has been deleted." }
+			format.json { head :no_content }
+		end
 	end
 
 	private
