@@ -1,14 +1,20 @@
 <h2>Portfolio Items</h2>
 <hr>
-<p><%= link_to 'Pages-Home', pages_home_path %>
-<%= link_to 'Blogs', blogs_path %></p>
-<%= link_to 'Create a new Portfolio Item', new_portfolio_path %>
+<p>
+	<%= link_to 'Pages-Home', pages_home_path, style: 'margin-right:50px' %>
+	<%= link_to 'Blogs', blogs_path, style: 'margin-right:50px' %>
+	<%= link_to 'Create a new Portfolio Item', new_portfolio_path %>
+</p>
 <br>
 
-<% @portfolio_items.each do |portfolio_item| %>
-	<p><%= link_to image_tag(portfolio_item.thumb_image), portfolio_path(portfolio_item) unless portfolio_item.thumb_image.nil? %>
-	<%= portfolio_item.title %>
-	<%= portfolio_item.subtitle %>
-	<%= portfolio_item.body %></p>
+<% @portfolio_items.order('updated_at DESC').each do |portfolio_item| %>
+	<p>
+		<%= link_to image_tag(portfolio_item.thumb_image), portfolio_path(portfolio_item) unless portfolio_item.thumb_image.nil? %>
+		<%= portfolio_item.title %>
+		<%= portfolio_item.subtitle %>
+		<%= portfolio_item.body %>
+		<%= link_to 'Show', portfolio_path(portfolio_item) %>
+		<%= link_to 'Edit', edit_portfolio_path(portfolio_item) %>
+	</p>
 	<hr>
 <% end %>

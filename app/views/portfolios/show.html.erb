@@ -1,5 +1,6 @@
 <h2><%= @portfolio_item.title %></h2>
-<%= link_to 'Portfolios Overview', portfolios_path %>
+<p><%= link_to 'Portfolios Overview', portfolios_path, style: 'margin-right:50px' %>
+<%= link_to 'Edit Portfolio', edit_portfolio_path(@portfolio_item) %></p>
 <hr>
 <br>
 <p><%= image_tag @portfolio_item.main_image unless @portfolio_item.main_image.nil? %></p>
