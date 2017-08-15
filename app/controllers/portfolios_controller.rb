@@ -21,7 +21,7 @@ class PortfoliosController < ApplicationController
 		
 		respond_to do |format|
 			if @portfolio_item.save
-				format.html { redirect_to @portfolio_item, notice: "Your Portfolio Item has been created." }
+				format.html { redirect_to portfolio_show_path(@portfolio_item), notice: "Your Portfolio Item has been created." }
 			else
 				format.html { render :new }
 			end
@@ -31,7 +31,7 @@ class PortfoliosController < ApplicationController
 	def update
 		respond_to do |format|
 			if @portfolio_item.update(portfolio_params)
-				format.html { redirect_to @portfolio_item, notice: "Your Portfolio Item has been updated." }
+				format.html { redirect_to portfolio_show_path(@portfolio_item), notice: "Your Portfolio Item has been updated." }
 			else
 				format.html { render :edit }
 			end
