@@ -1,16 +1,29 @@
 <h1>Homepage</h1>
 <p>Find me in app/views/pages/home.html.erb</p>
+<%= link_to 'Blogs', blogs_path, style: 'margin-right:50px' %>
+<%= link_to 'About', about_path, style: 'margin-right:50px' %>
+<%= link_to 'Contact', contact_path, style: 'margin-right:50px' %>
+<%= link_to 'Portfolios', portfolios_path %>
 <hr>
 <br>
 
+<h2>Portfolios</h2>
+<% @portfolios.each do |portfolio| %>
+	<p>
+		<%= link_to image_tag(portfolio.thumb_image), "https://placeholder.com" unless portfolio.thumb_image.nil? %>
+		<%= portfolio.title + ", " + portfolio.subtitle + ", " + portfolio.body %>
+	</p>
+<% end %>
+<hr>
+
 <h2>Blog Posts</h2>
 <% @posts.each do |p| %>
-<p><%= "Title: " + p.title + ", " %>
-<%= "Body: " + p.body %></p>
+	<p><%= "Title: " + p.title + ", " %>
+	<%= "Body: " + p.body %></p>
 <% end %>
 <hr>
 
 <h2>Skills</h2>
 <% @skills.each do |s| %>
-<p><%= s.title + ": " + s.percent_utilized.to_s %></p>
+	<p><%= s.title + ": " + s.percent_utilized.to_s %></p>
 <% end %>
