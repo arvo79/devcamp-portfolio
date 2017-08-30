@@ -6,6 +6,14 @@ class PortfoliosController < ApplicationController
 		@portfolio_items = Portfolio.all
 	end
 
+	def no1
+		@portfolio_no1 = Portfolio.No1
+	end
+
+	def no9
+		@portfolio_no9 = Portfolio.No9
+	end
+
 	def show
 	end
 

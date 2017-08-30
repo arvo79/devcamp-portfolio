@@ -1,7 +1,14 @@
+3.times do |topic|
+	Topic.create!(title: "Topic No #{topic+1}")
+end
+
+puts "3 topics created"
+
 10.times do |blog|
 	Blog.create!(
 		title: "Blog No #{blog+1}",
-		body: "Content No #{blog+1}"
+		body: "Content No #{blog+1}",
+		topic_id: Topic.last.id
 	)
 end
 
