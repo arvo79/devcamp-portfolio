@@ -17,7 +17,8 @@ puts "10 blogs created"
 5.times do |skill|
 	Skill.create!(
 		title: "Skill No #{skill+1}",
-		percent_utilized: (skill+1)*10
+		percent_utilized: (skill+1)*10,
+		badge: "http://placehold.it/75x75"
 	)
 end
 
@@ -28,8 +29,8 @@ puts "5 skills created"
 		title: "Portfolio No #{portfolio+1}",
 		subtitle: "Subtitle No #{portfolio+1}",
 		body: "Description No #{portfolio+1}",
-		main_image: "http://placehold.it/350x200",
-		thumb_image: "http://placehold.it/100x50"
+		main_image: "http://placehold.it/300x200",
+		thumb_image: "http://placehold.it/75x50"
 	)
 end
 
