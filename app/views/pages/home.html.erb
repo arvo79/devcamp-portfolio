@@ -25,5 +25,8 @@
 
 <h2>Skills</h2>
 <% @skills.each do |s| %>
-	<p><%= s.title + ": " + s.percent_utilized.to_s %></p>
+	<p>
+		<%= image_tag(s.badge) unless s.badge.nil? %>
+		<%= s.title + ": " + s.percent_utilized.to_s %>
+	</p>
 <% end %>

@@ -11,3 +11,9 @@
 <p><%= image_tag @portfolio_item.main_image unless @portfolio_item.main_image.nil? %></p>
 <em><%= @portfolio_item.subtitle %></em>
 <p><%= @portfolio_item.body %></p>
+<p>
+	<strong>Technologies used:</strong> 
+	<% @portfolio_item.technologies.each do |t| %>
+		<%= t.name + ' ' %>
+	<% end %>
+</p>
