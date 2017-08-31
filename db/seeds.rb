@@ -37,7 +37,7 @@ end
 puts "9 portfolios created"
 
 3.times do |technology|
-	Portfolio.last.technologies.create!(
+	Portfolio.find(technology+1).technologies.create!(
 		name: "Technology No #{technology+1}"
 	)
 end
