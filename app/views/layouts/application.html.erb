@@ -11,10 +11,11 @@
   <body>
     <div class="right">
         <% if current_user %>
+          <%= link_to 'Edit Profile', edit_user_registration_path, style: 'margin-right:50px' %>
           <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
         <% else %>
           <%= link_to 'Register', new_user_registration_path, style: 'margin-right:50px' %>
-          <%= link_to 'Login', new_user_session_path, style: 'margin-right:50px' %>
+          <%= link_to 'Login', new_user_session_path %>
         <% end %>
     </div>
 	  <p class="notice"><%= notice %></p>
