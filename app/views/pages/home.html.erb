@@ -18,8 +18,9 @@
 
 <h2>Blog Posts</h2>
 <% @posts.each do |p| %>
-	<p><%= "Title: " + p.title + ", " %>
-	<%= "Body: " + p.body %></p>
+	<p>
+		<%= "Title: " + p.title + ", " %>
+		<%= "Body: " + p.body %></p>
 <% end %>
 <hr>
 
@@ -28,5 +29,14 @@
 	<p>
 		<%= image_tag(s.badge) unless s.badge.nil? %>
 		<%= s.title + ": " + s.percent_utilized.to_s %>
+	</p>
+<% end %>
+<hr>
+
+<h2>Users</h2>
+<% @users.each do |u| %>
+	<p>
+		<%= 'Name: ' + u.name + ", " %>
+		<%= 'Email: ' + u.email %>
 	</p>
 <% end %>
