@@ -10,11 +10,12 @@
 
   <body>
     <div class="right">
-        <% if current_user %>
-          <%= link_to current_user.first_name, edit_user_registration_path, style: 'margin-right:50px' %>
+        <%= 'Thank you for visiting from ' + session[:source] if session[:source] %>
+        <% if current_user.is_a?(User) %>
+          <%= link_to current_user.first_name, edit_user_registration_path, style: 'margin-right:50px; margin-left:50px' %>
           <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
         <% else %>
-          <%= link_to 'Register', new_user_registration_path, style: 'margin-right:50px' %>
+          <%= link_to 'Register', new_user_registration_path, style: 'margin-right:50px; margin-left:50px' %>
           <%= link_to 'Login', new_user_session_path %>
         <% end %>
     </div>
