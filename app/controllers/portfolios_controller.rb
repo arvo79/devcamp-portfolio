@@ -15,6 +15,7 @@ class PortfoliosController < ApplicationController
 	end
 
 	def show
+    @page_title = "Portfolio | " + @portfolio_item.title
 	end
 
 	def new

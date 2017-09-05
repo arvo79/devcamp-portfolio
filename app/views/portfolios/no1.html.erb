@@ -2,11 +2,6 @@
 
 <h2>Portfolio No 1 Items</h2>
 <hr>
-<p>
-	<%= link_to 'Pages-Home', home_path, style: 'margin-right:50px' %>
-	<%= link_to 'Blogs', blogs_path, style: 'margin-right:50px' %>
-	<%= link_to 'Create a new Portfolio Item', new_portfolio_path %>
-</p>
 <br>
 
 <% @portfolio_no1.order('updated_at DESC').each do |portfolio_item| %>

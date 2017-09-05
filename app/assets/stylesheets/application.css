@@ -13,12 +13,23 @@
  *= require_tree .
  *= require_self
  */
-body {
+
+ body {
     margin: 0;
     padding: 0;
 }
 
-.right {
-    position: absolute;
-    right: 50px;
+.top-nav {
+ 		background: #B3D9E6;
+		position: top;
+		margin: 0;
+		padding: 40px;
+}
+
+.top-nav .pull-left {
+		float: left;
+}
+
+.top-nav .pull-right {
+    float: right;
 }
