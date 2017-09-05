@@ -1,11 +1,11 @@
-<%= form_for(@portfolio_item) do |f| %>
+<%= form_for(portfolio_item) do |f| %>
 
-  <% if @portfolio_item.errors.any? %>
+  <% if portfolio_item.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@portfolio_item.errors.count, "error") %> prohibited this Portfolio Item from being saved:</h2>
+      <h2><%= pluralize(portfolio_item.errors.count, "error") %> prohibited this Portfolio Item from being saved:</h2>
 
       <ul>
-      <% @portfolio_item.errors.full_messages.each do |message| %>
+      <% portfolio_item.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
       </ul>

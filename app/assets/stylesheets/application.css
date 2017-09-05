@@ -17,3 +17,7 @@ body {
 .top-nav .pull-right {
     float: right;
 }
+
+.application a {
+		color: white;
+}
