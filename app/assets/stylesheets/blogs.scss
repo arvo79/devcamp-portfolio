@@ -1,3 +1,24 @@
 // Place all the styles related to the Blogs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+		background: #8DB5A7;
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav {
+ 		background: #B3D9E6;
+		position: top;
+		margin: 0;
+		padding: 40px;
+}
+
+.top-nav .pull-left {
+		float: left;
+}
+
+.top-nav .pull-right {
+    float: right;
+}
