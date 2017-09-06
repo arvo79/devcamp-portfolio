@@ -7,8 +7,13 @@ module ApplicationHelper
   	(link_to 'About', about_path, style: 'margin-right:50px') +
   	(link_to 'Contact', contact_path)
 	end
-	def external_source
-		"Thank you for visiting from ".html_safe + session[:source] if session[:source]
+
+	def source_helper
+    if session[:source]
+      greeting = "Thank you for visiting from " 
+      (content_tag(:span, greeting, class: "source-greeting")) +
+      (content_tag(:span, session[:source].capitalize, style: "font-weight:bold; margin-right:50px"))
+    end
 	end
 
 	def login_helper
