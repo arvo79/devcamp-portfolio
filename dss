@@ -1,0 +1,130 @@
+[1m[1;34mActiveSupport::ToJsonWithActiveSupportEncoder#methods[0m[0m: to_json
+[1m[1;34mActionView::CompiledTemplates#methods[0m[0m: 
+  __home_felix__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates__inner_console_markup_html_erb__1018650142861677038_70235067091480                              
+  __home_felix__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates__inner_console_markup_html_erb__1018650142861677038_70235110354200                              
+  __home_felix__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates__markup_html_erb___152633137920967179_70235110189900                                            
+  __home_felix__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates__markup_html_erb___152633137920967179_70235198396540                                            
+  __home_felix__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates__prompt_box_markup_html_erb__2363833326155712347_61948960                                       
+  __home_felix__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates__prompt_box_markup_html_erb__2363833326155712347_70235198258620                                 
+  __home_felix__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb___358986106354812300_70235066902920                                              
+  __home_felix__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb___358986106354812300_70235110207320                                              
+  __home_felix__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_error_page_js_erb___3261900132559467791_61859260                                                
+  __home_felix__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_error_page_js_erb___3261900132559467791_70235067324400                                          
+  __home_felix__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_index_html_erb___4108381186659168776_70235110131040                                             
+  __home_felix__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_index_html_erb___4108381186659168776_70235198436900                                             
+  __home_felix__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_layouts_inlined_string_erb__404645768461123109_70235110351180                                   
+  __home_felix__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_layouts_inlined_string_erb__404645768461123109_70235110428680                                   
+  __home_felix__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_layouts_inlined_string_erb__404645768461123109_70235198222440                                   
+  __home_felix__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_layouts_inlined_string_erb__404645768461123109_70235198315940                                   
+  __home_felix__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_layouts_javascript_erb__2860603951713012761_70235110204340                                      
+  __home_felix__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_layouts_javascript_erb__2860603951713012761_70235198388280                                      
+  __home_felix__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_main_js_erb__1030442987228966594_61891580                                                       
+  __home_felix__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_main_js_erb__1030442987228966594_70235067254600                                                 
+  __home_felix__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_style_css_erb__1301381503412699132_70235110431660                                               
+  __home_felix__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_style_css_erb__1301381503412699132_70235198225420                                               
+  __home_felix__rvm_gems_ruby_______global_gems_actionpack_______lib_action_dispatch_middleware_templates_rescues__request_and_response_html_erb___2080038633438446507_62145000      
+  __home_felix__rvm_gems_ruby_______global_gems_actionpack_______lib_action_dispatch_middleware_templates_rescues__request_and_response_html_erb___2080038633438446507_70235198545500
+  __home_felix__rvm_gems_ruby_______global_gems_actionpack_______lib_action_dispatch_middleware_templates_rescues__source_html_erb__3594338291531047997_62292720                     
+  __home_felix__rvm_gems_ruby_______global_gems_actionpack_______lib_action_dispatch_middleware_templates_rescues__source_html_erb__3594338291531047997_70235066376860               
+  __home_felix__rvm_gems_ruby_______global_gems_actionpack_______lib_action_dispatch_middleware_templates_rescues__trace_html_erb__2372903268998752728_70235066543200                
+  __home_felix__rvm_gems_ruby_______global_gems_actionpack_______lib_action_dispatch_middleware_templates_rescues__trace_html_erb__2372903268998752728_70235109977740                
+  __home_felix__rvm_gems_ruby_______global_gems_actionpack_______lib_action_dispatch_middleware_templates_rescues_diagnostics_html_erb__1588051114255646291_70235109935600           
+  __home_felix__rvm_gems_ruby_______global_gems_actionpack_______lib_action_dispatch_middleware_templates_rescues_layout_erb___4255263713795885960_62322960                          
+  __home_felix__rvm_gems_ruby_______global_gems_actionpack_______lib_action_dispatch_middleware_templates_rescues_layout_erb___4255263713795885960_70235066358220                    
+  __home_felix__rvm_gems_ruby_______global_gems_actionpack_______lib_action_dispatch_middleware_templates_rescues_template_error_html_erb___2315583579063488281_70235066327600       
+  _app_views_layouts_portfolio_html_erb__2963653014635440737_57773380                                                                                                                
+  _app_views_portfolios__portfolio_item_html_erb__4425754359970674315_57186880                                                                                                       
+  _app_views_portfolios_index_html_erb__1433645754183321076_57792960                                                                                                                 
+  _app_views_portfolios_show_html_erb__2291572456131280724_60826760                                                                                                                  
+  _app_views_portfolios_show_html_erb__2291572456131280724_70235365911640                                                                                                            
+  _app_views_shared__nav_html_erb___4135068563003817046_59416140                                                                                                                     
+[1m[1;34mActionView::Context#methods[0m[0m: _prepare_context  output_buffer  output_buffer=  view_flow  view_flow=
+[1m[1;34mActionView::Helpers::CaptureHelper#methods[0m[0m: capture  content_for  content_for?  provide  with_output_buffer
+[1m[1;34mActionView::Helpers::ControllerHelper#methods[0m[0m: 
+  action_name  assign_controller  controller  controller=  controller_name  controller_path  flash  headers  params  request  request=  request_forgery_protection_token  response  session
+[1m[1;34mActionView::Helpers::CsrfHelper#methods[0m[0m: csrf_meta_tag  csrf_meta_tags
+[1m[1;34mActionView::Helpers::DateHelper#methods[0m[0m: 
+  date_select      distance_of_time_in_words         select_date      select_day   select_minute  select_second  select_year        time_select
+  datetime_select  distance_of_time_in_words_to_now  select_datetime  select_hour  select_month   select_time    time_ago_in_words  time_tag   
+[1m[1;34mActionView::Helpers::OutputSafetyHelper#methods[0m[0m: raw  safe_join  to_sentence
+[1m[1;34mActionView::Helpers::TagHelper#methods[0m[0m: cdata_section  content_tag  escape_once  tag
+[1m[1;34mActiveSupport::Benchmarkable#methods[0m[0m: benchmark
+[1m[1;34mActionView::Helpers::AssetUrlHelper#methods[0m[0m: 
+  asset_path  audio_url              font_path   image_url        path_to_asset  path_to_image       path_to_video              stylesheet_url  url_to_font        url_to_stylesheet  video_url
+  asset_url   compute_asset_extname  font_url    javascript_path  path_to_audio  path_to_javascript  public_compute_asset_path  url_to_asset    url_to_image       url_to_video     
+  audio_path  compute_asset_host     image_path  javascript_url   path_to_font   path_to_stylesheet  stylesheet_path            url_to_audio    url_to_javascript  video_path       
+[1m[1;34mActionView::Helpers::AssetTagHelper#methods[0m[0m: audio_tag  auto_discovery_link_tag  favicon_link_tag  image_alt  image_tag  video_tag
+[1m[1;34mActionView::Helpers::UrlHelper#methods[0m[0m: button_to  current_page?  link_to  link_to_if  link_to_unless  link_to_unless_current  mail_to
+[1m[1;34mActionView::Helpers::AtomFeedHelper#methods[0m[0m: atom_feed
+[1m[1;34mActionView::Helpers::CacheHelper#methods[0m[0m: cache  cache_fragment_name  cache_if  cache_unless
+[1m[1;34mActionView::Helpers::SanitizeHelper#methods[0m[0m: sanitize  sanitize_css  strip_links  strip_tags
+[1m[1;34mActionView::Helpers::DebugHelper#methods[0m[0m: debug
+[1m[1;34mActionView::Helpers::TextHelper#methods[0m[0m: concat  current_cycle  cycle  excerpt  highlight  pluralize  reset_cycle  safe_concat  simple_format  truncate  word_wrap
+[1m[1;34mActionView::Helpers::FormTagHelper#methods[0m[0m: 
+  button_tag       datetime_field_tag                        embed_authenticity_token_in_remote_forms=  hidden_field_tag  number_field_tag    range_field_tag   telephone_field_tag  url_field_tag    
+  check_box_tag    datetime_local_field_tag                  field_set_tag                              image_submit_tag  password_field_tag  search_field_tag  text_area_tag        utf8_enforcer_tag
+  color_field_tag  email_field_tag                           file_field_tag                             label_tag         phone_field_tag     select_tag        text_field_tag       week_field_tag   
+  date_field_tag   embed_authenticity_token_in_remote_forms  form_tag                                   month_field_tag   radio_button_tag    submit_tag        time_field_tag     
+[1m[1;34mActionView::ModelNaming#methods[0m[0m: convert_to_model  model_name_from_record_or_class
+[1m[1;34mActionView::RecordIdentifier#methods[0m[0m: dom_class  dom_id
+[1m[1;34mActionView::Helpers::FormHelper#methods[0m[0m: 
+  check_box    datetime_field        default_form_builder=  fields_for  form_with                          hidden_field  number_field    radio_button  telephone_field  time_field
+  color_field  datetime_local_field  email_field            file_field  form_with_generates_remote_forms   label         password_field  range_field   text_area        url_field 
+  date_field   default_form_builder  fields                 form_for    form_with_generates_remote_forms=  month_field   phone_field     search_field  text_field       week_field
+[1m[1;34mActionView::Helpers::TranslationHelper#methods[0m[0m: l  localize  t  translate
+[1m[1;34mActionView::Helpers::FormOptionsHelper#methods[0m[0m: 
+  collection_check_boxes    collection_select          grouped_options_for_select                options_for_select                  select                        time_zone_select
+  collection_radio_buttons  grouped_collection_select  option_groups_from_collection_for_select  options_from_collection_for_select  time_zone_options_for_select
+[1m[1;34mActionView::Helpers::JavaScriptHelper#methods[0m[0m: escape_javascript  j  javascript_cdata_section  javascript_tag
+[1m[1;34mActionView::Helpers::NumberHelper#methods[0m[0m: number_to_currency  number_to_human  number_to_human_size  number_to_percentage  number_to_phone  number_with_delimiter  number_with_precision
+[1m[1;34mActionView::Helpers::RecordTagHelper#methods[0m[0m: content_tag_for  div_for
+[1m[1;34mActionView::Helpers::RenderingHelper#methods[0m[0m: _layout_for  render
+[1m[1;34mActionCable::Helpers::ActionCableHelper#methods[0m[0m: action_cable_meta_tag
+[1m[1;34mDevise::Controllers::UrlHelpers#methods[0m[0m: 
+  cancel_registration_path  destroy_session_path  edit_password_path  edit_registration_path  new_password_path  new_registration_path  new_session_path  password_path  registration_path  session_path
+  cancel_registration_url   destroy_session_url   edit_password_url   edit_registration_url   new_password_url   new_registration_url   new_session_url   password_url   registration_url   session_url 
+[1m[1;34mSprockets::Rails::Utils#methods[0m[0m: using_sprockets4?
+[1m[1;34mSprockets::Rails::Helper#methods[0m[0m: asset_digest_path  asset_integrity  compute_asset_path  javascript_include_tag  resolve_asset_path  stylesheet_link_tag
+[1m[1;34mActionView::Base#methods[0m[0m: 
+  _routes=             assets_prefix                      config                      digest_assets?     precompiled_asset_checker                       streaming_completion_on_exception=
+  _routes?             assets_prefix=                     config=                     field_error_proc   precompiled_asset_checker=                      unknown_asset_fallback            
+  assets_environment   assets_prefix?                     debug_assets                field_error_proc=  precompiled_asset_checker?                      unknown_asset_fallback=           
+  assets_environment=  assign                             debug_assets=               formats            prefix_partial_path_with_controller_namespace   unknown_asset_fallback?           
+  assets_environment?  assigns                            debug_assets?               formats=           prefix_partial_path_with_controller_namespace=  view_paths                        
+  assets_manifest      assigns=                           debug_missing_translation   locale             raise_on_missing_translations                   view_paths=                       
+  assets_manifest=     automatically_disable_submit_tag   debug_missing_translation=  locale=            raise_on_missing_translations=                  view_renderer                     
+  assets_manifest?     automatically_disable_submit_tag=  default_formats             logger             resolve_assets_with                             view_renderer=                    
+  assets_precompile    check_precompiled_asset            default_formats=            logger=            resolve_assets_with=                          
+  assets_precompile=   check_precompiled_asset=           digest_assets               logger?            resolve_assets_with?                          
+  assets_precompile?   check_precompiled_asset?           digest_assets=              lookup_context     streaming_completion_on_exception             
+[1m[1;34mActionDispatch::Routing::PolymorphicRoutes#methods[0m[0m: edit_polymorphic_path  edit_polymorphic_url  new_polymorphic_path  new_polymorphic_url  polymorphic_path  polymorphic_url
+[1m[1;34mActionDispatch::Routing::UrlFor#methods[0m[0m: full_url_for  route_for
+[1m[1;34mActionView::RoutingUrlFor#methods[0m[0m: url_for  url_options
+[1m[1;34m#<Module:0x000000065eece0>#methods[0m[0m: 
+  about_url                     destroy_user_session_url    home_url                   new_user_session_url  portfolios_url             root_url              
+  blog_url                      edit_blog_url               new_blog_url               no1_url               rails_info_properties_url  toggle_status_blog_url
+  blogs_url                     edit_portfolio_url          new_portfolio_url          no9_url               rails_info_routes_url      user_password_url     
+  cancel_user_registration_url  edit_user_password_url      new_user_password_url      portfolio_show_url    rails_info_url             user_registration_url 
+  contact_url                   edit_user_registration_url  new_user_registration_url  portfolio_url         rails_mailers_url          user_session_url      
+[1m[1;34m#<Module:0x000000065eecb8>#methods[0m[0m: 
+  about_path                     destroy_user_session_path    home_path                   new_user_session_path  portfolios_path             root_path              
+  blog_path                      edit_blog_path               new_blog_path               no1_path               rails_info_path             toggle_status_blog_path
+  blogs_path                     edit_portfolio_path          new_portfolio_path          no9_path               rails_info_properties_path  user_password_path     
+  cancel_user_registration_path  edit_user_password_path      new_user_password_path      portfolio_path         rails_info_routes_path      user_registration_path 
+  contact_path                   edit_user_registration_path  new_user_registration_path  portfolio_show_path    rails_mailers_path          user_session_path      
+[1m[1;34m#<Module:0x007fc1c81ef9d8>#methods[0m[0m: _routes
+[1m[1;34mActionDispatch::Routing::RouteSet::MountedHelpers#methods[0m[0m: _main_app  main_app
+[1m[1;34m#<Module:0x00000007628b88>#methods[0m[0m: 
+  alert    current_user        form_authenticity_token  notice                    signed_in?    user_signed_in?          warden
+  cookies  devise_controller?  fragment_cache_key       protect_against_forgery?  user_session  view_cache_dependencies
+[1m[1;34mApplicationHelper#methods[0m[0m: login_helper  page_links  source_helper
+[1m[1;34mDeviseHelper#methods[0m[0m: devise_error_messages!
+[1m[1;34m#<Class:0x007fc1c81efa78>#methods[0m[0m: default_url_options  default_url_options=  default_url_options?
+[1m[1;34minstance variables[0m[0m: 
+  [0;34m@_assigns[0m  [0;34m@_controller[0m            [0;34m@_request[0m  [0;34m@marked_for_same_origin_verification[0m  [0;34m@page_title[0m    [0;34m@view_flow[0m      [0;34m@virtual_path[0m
+  [0;34m@_config[0m   [0;34m@_default_form_builder[0m  [0;34m@_routes[0m   [0;34m@output_buffer[0m                        [0;34m@seo_keywords[0m  [0;34m@view_renderer[0m
+[1m[1;34mclass variables[0m[0m: 
+  [1;34m@@automatically_disable_submit_tag[0m  [1;34m@@default_formats[0m                           [1;34m@@field_error_proc[0m                               [1;34m@@raise_on_missing_translations[0m    
+  [1;34m@@debug_missing_translation[0m         [1;34m@@default_url_options[0m                       [1;34m@@form_with_generates_remote_forms[0m               [1;34m@@streaming_completion_on_exception[0m
+  [1;34m@@default_form_builder[0m              [1;34m@@embed_authenticity_token_in_remote_forms[0m  [1;34m@@prefix_partial_path_with_controller_namespace[0m
+[1m[1;34mlocals[0m[0m: _  __  _dir_  _ex_  _file_  _in_  [0;33m_old_output_buffer[0m  [0;33m_old_virtual_path[0m  _out_  _pry_  [0;33mlocal_assigns[0m  [0;33moutput_buffer[0m
