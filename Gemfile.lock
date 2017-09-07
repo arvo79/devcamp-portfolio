@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/felixeichner/view_tool_test
+  revision: 041ba4ad620daa3f973f7a913ef0116eb9417161
+  specs:
+    view_tool_test (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -229,6 +235,7 @@ DEPENDENCIES
   turbolinks (~> 5)
   tzinfo-data
   uglifier (>= 1.3.0)
+  view_tool_test!
   web-console (>= 3.3.0)
 
 BUNDLED WITH
