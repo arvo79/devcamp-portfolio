@@ -1,11 +1,11 @@
 module ApplicationHelper
 
-	def page_links
-  	(link_to 'Portfolios', portfolios_path, class: "nav-link") +
-  	(link_to 'Blogs', blogs_path, class: "nav-link") +
-  	(link_to 'Overview', home_path, class: "nav-link") +
-  	(link_to 'About', about_path, class: "nav-link") +
-  	(link_to 'Contact', contact_path, class: "nav-link")
+	def page_links style = ''
+  	(link_to 'Portfolios', portfolios_path, class: style) +
+  	(link_to 'Blogs', blogs_path, class: style) +
+  	(link_to 'Overview', home_path, class: style) +
+  	(link_to 'About', about_path, class: style) +
+  	(link_to 'Contact', contact_path, class: style)
 	end
 
 	def source_helper
