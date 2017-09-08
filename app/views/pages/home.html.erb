@@ -1,38 +1,36 @@
-<h2>Homepage</h2>
-<p>Find me in app/views/pages/home.html.erb</p>
-<hr>
-<br>
+<div class="site-wrapper">
 
-<h2>Portfolios</h2>
-<% @portfolios.each do |portfolio| %>
-	<p>
-		<%= link_to image_tag(portfolio.thumb_image), "https://placeholder.com" unless portfolio.thumb_image.nil? %>
-		<%= portfolio.title + ", " + portfolio.subtitle + ", " + portfolio.body %>
-	</p>
-<% end %>
-<hr>
+  <div class="site-wrapper-inner">
 
-<h2>Blog Posts</h2>
-<% @posts.each do |p| %>
-	<p>
-		<%= "Title: " + p.title + ", " %>
-		<%= "Body: " + p.body %></p>
-<% end %>
-<hr>
+    <div class="cover-container">
 
-<h2>Skills</h2>
-<% @skills.each do |s| %>
-	<p>
-		<%= image_tag(s.badge) unless s.badge.nil? %>
-		<%= s.title + ": " + s.percent_utilized.to_s %>
-	</p>
-<% end %>
-<hr>
+      <div class="masthead clearfix">
+        <div class="inner">
+          <h3 class="masthead-brand">Cover</h3>
+          <nav class="nav nav-masthead">
+            <a class="nav-link active" href="#">Home</a>
+            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">Contact</a>
+          </nav>
+        </div>
+      </div>
 
-<h2>Users</h2>
-<% @users.each do |u| %>
-	<p>
-		<%= 'Name: ' + u.name + ", " %>
-		<%= 'Email: ' + u.email %>
-	</p>
-<% end %>
+      <div class="inner cover">
+        <h1 class="cover-heading">Cover your page.</h1>
+        <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+        <p class="lead">
+          <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
+        </p>
+      </div>
+
+      <div class="mastfoot">
+        <div class="inner">
+          <p>Cover template for <a href="https://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
