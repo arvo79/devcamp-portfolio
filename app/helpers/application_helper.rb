@@ -12,19 +12,17 @@ module ApplicationHelper
     if session[:source]
       greeting = "Thank you for visiting from " 
       (content_tag(:span, greeting, class: "source-greeting")) +
-      (content_tag(:span, session[:source].capitalize, style: "font-weight:bold; margin-right:50px"))
+      (content_tag(:span, session[:source].capitalize))
     end
 	end
 
-	def login_helper
+	def login_helper style
     if current_user.is_a?(GuestUser)
-      ('Hello '.html_safe + current_user.first_name) +
-      (link_to 'Register', new_user_registration_path, style: 'margin-right:50px; margin-left:50px') +
-      (link_to 'Login', new_user_session_path)
+      (link_to 'Register', new_user_registration_path, class: style) +
+      (link_to 'Login', new_user_session_path, class: style)
 	  else 	 
-      (link_to current_user.first_name, edit_user_registration_path,
-        style: 'margin-right:50px; margin-left:50px') +
-      (link_to 'Logout', destroy_user_session_path, method: :delete)   
+      (link_to current_user.first_name, edit_user_registration_path, class: style) +
+      (link_to 'Logout', destroy_user_session_path, method: :delete, class: style)   
 	  end	 
 	end
 
