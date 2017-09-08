@@ -1,5 +1,18 @@
-<h2>Pages#contact</h2>
-<p>Tel. <%= number_to_phone "55555555" %></p>
-<p><%= number_to_currency "2345" %></p>
-<p><%= number_to_percentage "74.8" %></p>
-<p><%= number_with_delimiter "2345687679679" %></p>
+<h2>Talk to me!</h2>
+<hr><br>
+<div class="row">
+	<div class="col-md-6">
+		<h3>My Office</h3>
+		<p>Seydlitzstraße 6, 10557 Berlin</p>
+		<h3>Phone</h3>
+		<p><%= number_to_phone "+387920347448" %></p>
+		<h3>Email</h3>
+		<p><%= mail_to 'test@email.com' %></p>
+		<h3>Website</h3>
+		<p><%= link_to 'Testpage.com', home_path %></p>
+	</div>
+	<div class="col-md-6">
+		<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9710.187490856131!2d13.338427849999999!3d52.523539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb2542b7f46bba34f!2sVabali+Spa+Berlin!5e0!3m2!1sde!2sde!4v1504872094956" width="450" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+	</div>
+</div>
+
