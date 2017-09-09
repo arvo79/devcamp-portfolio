@@ -7,7 +7,7 @@ puts "3 topics created"
 10.times do |blog|
 	Blog.create!(
 		title: "Blog No #{blog+1}",
-		body: "Content No #{blog+1}",
+		body: "This is an awesome blog post which you might still get tired of after reading the same sentence over and over again. This is an awesome blog post which you might still get tired of after reading the same sentence over and over again. This is an awesome blog post which you might still get tired of after reading the same sentence over and over again. This is an awesome blog post which you might still get tired of after reading the same sentence over and over again. This is an awesome blog post which you might still get tired of after reading the same sentence over and over again. This is an awesome blog post which you might still get tired of after reading the same sentence over and over again. This is an awesome blog post which you might still get tired of after reading the same sentence over and over again. This is an awesome blog post which you might still get tired of after reading the same sentence over and over again. This is an awesome blog post which you might still get tired of after reading the same sentence over and over again.",
 		topic_id: Topic.last.id
 	)
 end
@@ -28,7 +28,7 @@ puts "5 skills created"
 	Portfolio.create!(
 		title: "Portfolio No #{portfolio+1}",
 		subtitle: "Subtitle No #{portfolio+1}",
-		body: "Description No #{portfolio+1}",
+		body: "This is an awesome blog post which you might still get tired of after reading the same sentence over and over again. This is an awesome blog post which you might still get tired of after reading the same sentence over and over again. This is an awesome blog post which you might still get tired of after reading the same sentence over and over again. This is an awesome blog post which you might still get tired of after reading the same sentence over and over again. This is an awesome blog post which you might still get tired of after reading the same sentence over and over again. This is an awesome blog post which you might still get tired of after reading the same sentence over and over again. This is an awesome blog post which you might still get tired of after reading the same sentence over and over again. This is an awesome blog post which you might still get tired of after reading the same sentence over and over again. This is an awesome blog post which you might still get tired of after reading the same sentence over and over again.",
 		main_image: "http://placehold.it/300x200",
 		thumb_image: "http://placehold.it/75x50"
 	)
