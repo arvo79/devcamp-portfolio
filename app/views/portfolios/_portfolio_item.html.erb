@@ -1,4 +1,4 @@
-<div class="card" style="text-align:center;">
+<div class="card" data-id="<%= portfolio_item.id %>">
   <p><%= link_to image_tag(portfolio_item.thumb_image), portfolio_show_path(portfolio_item) unless portfolio_item.thumb_image.nil? %></p>
   <p class="card-text">
 	  <p><strong><%= portfolio_item.title %></strong></p>
