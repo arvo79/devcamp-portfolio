@@ -19,4 +19,8 @@ class Portfolio < ApplicationRecord
 		self.main_image ||= Placeholder.image_generator(width: '300', height: '200') # ||= only asign if main_image has a nil value
 		self.thumb_image ||= Placeholder.image_generator(width: '75', height: '50')
 	end
+
+	def self.by_position
+		order("position ASC")
+	end
 end

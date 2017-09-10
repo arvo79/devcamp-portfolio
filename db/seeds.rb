@@ -29,8 +29,8 @@ puts "5 skills created"
 		title: "Portfolio No #{portfolio+1}",
 		subtitle: "Subtitle No #{portfolio+1}",
 		body: "This is an awesome blog post which you might still get tired of after reading the same sentence over and over again. This is an awesome blog post which you might still get tired of after reading the same sentence over and over again. This is an awesome blog post which you might still get tired of after reading the same sentence over and over again. This is an awesome blog post which you might still get tired of after reading the same sentence over and over again. This is an awesome blog post which you might still get tired of after reading the same sentence over and over again. This is an awesome blog post which you might still get tired of after reading the same sentence over and over again. This is an awesome blog post which you might still get tired of after reading the same sentence over and over again. This is an awesome blog post which you might still get tired of after reading the same sentence over and over again. This is an awesome blog post which you might still get tired of after reading the same sentence over and over again.",
-		main_image: "http://placehold.it/300x200",
-		thumb_image: "http://placehold.it/75x50"
+		main_image: "http://placehold.it/600x400",
+		thumb_image: "http://placehold.it/350x200"
 	)
 end
 

@@ -1,5 +1,7 @@
 @import "bootstrap";
 
+@import "jquery-ui";
+
 body {
   padding-top: 20px;
 }
@@ -68,6 +70,7 @@ body {
   padding: .75rem;
   margin-bottom: 2rem;
   border: 0;
+  text-align: center;
 }
 
 .card > img {
@@ -92,6 +95,10 @@ footer p {
  * Custom Styles
  */
 
+.container {
+  max-width: 1300px;  
+}
+
 .portfolio-form {
-  padding-top: 30px;
+  padding-top: 20px;
 }
