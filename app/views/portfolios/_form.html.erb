@@ -1,6 +1,7 @@
 <%= form_for(portfolio_item) do |f| %>
 
   <% if portfolio_item.errors.any? %>
+    <hr>
     <div id="error_explanation">
       <h2><%= pluralize(portfolio_item.errors.count, "error") %> prohibited this Portfolio Item from being saved:</h2>
 
@@ -12,41 +13,54 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :title %>
-    <%= f.text_field :title %>
+  <hr>
+  <div class="row">
+
+    <div class="col-md-6">
+    
+      <div class="form-group">
+        <%= f.label :title %>
+        <%= f.text_field :title, class: "form-control" %>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :subtitle %>
+        <%= f.text_field :subtitle, class: "form-control" %>
+      </div>
+    
+      <div class="form-group">
+        <%= f.label :main_image %>
+        <%= f.text_area :main_image, class: "form-control" %>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :thumb_image %>
+        <%= f.text_area :thumb_image, class: "form-control" %>
+      </div>
+      
+    </div>
+    
+    <div class="col-md-6">
+
+      <div class="form-group">
+        <%= f.label :body %>
+        <%= f.text_area :body, rows: 8, class: "form-control" %>
+      </div>
+
+      <div>
+        <p>Technologies used:</p>
+        <%= f.fields_for :technologies do |technology_form| %>
+          <div class="form-group">
+            <%= technology_form.text_field :name, class: "form-control" %>
+          </div>
+        <% end %>
+      </div>
+      
+    </div>
+
   </div>
 
-  <div class="field">
-    <%= f.label :subtitle %>
-    <%= f.text_field :subtitle %>
-  </div>
-
-  <div class="field">
-    <%= f.label :body %>
-    <%= f.text_area :body %>
-  </div>
-
-  <ul>
-    <%= f.fields_for :technologies do |technology_form| %>
-      <li>
-        <%= technology_form.label :name %>
-        <%= technology_form.text_field :name %>
-      </li>
-    <% end %>
-  </ul>
-  
-  <div class="field">
-  	<%= f.label :main_image %>
-  	<%= f.text_area :main_image %>
-  </div>
-
-  <div class="field">
-  	<%= f.label :thumb_image %>
-  	<%= f.text_area :thumb_image %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit %>
+  <div class="form-group">
+    <%= f.submit 'Submit', class: "btn btn-primary btn-block" %>
   </div>
 <% end %>

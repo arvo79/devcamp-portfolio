@@ -1,7 +1,8 @@
 <footer class="text-muted">
   <div class="container">
     <div class="float-right">
-    	<a href="#">Back to top</a>
+  		<%= (link_to 'Create New Portfolio Item / ', new_portfolio_path) if logged_in?(:site_admin) %>
+   		<a href="#">Back to top</a>
     </div>
     <p><%= copyright_generator %>
   </div>
