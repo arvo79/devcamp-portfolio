@@ -1,3 +1,8 @@
+$ ->
+	$('#hide-button').click ->
+		$('.head-container').toggle()
+
+
 ready = undefined
 set_positions = undefined
 

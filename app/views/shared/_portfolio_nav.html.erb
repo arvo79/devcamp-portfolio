@@ -6,6 +6,12 @@
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">
       <%= page_links "nav-link" %>
+      <li class="nav-link">
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+      </form>
+      </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           User Account
@@ -14,11 +20,8 @@
           <%= login_helper "nav-link" %>
         </div>
       </li>
-      <li class="nav-item">
-      <form class="form-inline">
-        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
+      <li class="nav-link">
+        <%= "<button class='btn btn-info' id='hide-button'>Hide/Show Head</button>".html_safe unless logged_in?(:site_admin) %>
       </li>
     </ul>
   </div>
