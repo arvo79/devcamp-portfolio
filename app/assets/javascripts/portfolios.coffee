@@ -1,4 +1,4 @@
-$ ->
+$(document).on "turbolinks:load", ->
 	$('#hide-button').click ->
 		$('.head-container').toggle()
 
