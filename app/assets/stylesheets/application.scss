@@ -29,7 +29,6 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
 }
 body {
   color: #fff;
@@ -165,6 +164,18 @@ body {
  * Custom styles
  */
 
+.masthead, {
+  background-color: rgba(1,1,1,.2);
+  padding-bottom: 15px;
+  border-radius: 5px;
+}
+
+.content-container {
+  background-color: rgba(1,1,1,.4);
+  padding: 40px;
+  border-radius: 5px;
+}
+
 .card-block {
   color: black;
   text-align: left;
@@ -183,4 +194,23 @@ body {
   width: 22rem;
   margin: 0 auto;
   float: none;
+}
+
+#background {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: image-url('bottles_bw.jpg') no-repeat;
+  background-size: cover;
+}
+
+.app-footer {
+  color: white;
 }
