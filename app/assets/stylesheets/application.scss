@@ -176,6 +176,13 @@ body {
   border-radius: 5px;
 }
 
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
 .card-block {
   color: black;
   text-align: left;
