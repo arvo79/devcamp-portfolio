@@ -12,27 +12,27 @@
   <% end %>
 
   <div class="form-group">
-    <%= form.label :title %>
-    <%= form.text_field :title, id: :blog_title, class: "form-control" %>
+    <%= form.text_field :title, id: :blog_title, placeholder: "Title", class: "form-control" %>
   </div>
 
   <div class="form-group">
-    <%= form.label :body %>
-    <%= form.text_area :body, id: :blog_body, class: "form-control", rows: 13 %>
+    <%= form.text_area :body, id: :blog_body, placeholder: "Content", class: "form-control", rows: 8 %>
   </div>
   
   <div class="form-group">
     <%= form.label :topic_id %>
     <%= form.collection_select(:topic_id, Topic.all, :id, :title,
                               {
-                                include_blank: true
+                                prompt: ">> Select Topics"
                               },
-                              class: 'form-control'
+                              {
+                                class: 'form-control'
+                              }
                             )
     %>
   </div>
 
   <div class="form-group">
-    <%= form.submit "Submit", class: "btn btn-primary" %>
+    <%= form.submit current_action_label, class: "btn btn-primary" %>
   </div>
 <% end %>

@@ -11,6 +11,16 @@ class BlogsController < ApplicationController
     @blogs = Blog.order('updated_at DESC').page(params[:page]).per(2)
   end
 
+  def current_action_label
+    if params[:action] == 'edit'
+      'Update Blog'
+    else
+      'Create Blog'
+    end
+  end
+  helper_method :current_action_label
+
+
   # GET /blogs/1
   # GET /blogs/1.json
   def show
