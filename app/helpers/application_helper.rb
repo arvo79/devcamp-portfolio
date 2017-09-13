@@ -6,7 +6,8 @@ module ApplicationHelper
       { url: blogs_path, title: "Blogs" },
       { url: home_path, title: "Overview" },
       { url: about_path, title: "About" },
-      { url: contact_path, title: "Contact" },      
+      { url: contact_path, title: "Contact" },
+      { url: tech_news_path, title: "Tech News" }
     ]
   end
 

@@ -219,11 +219,20 @@ body {
   background-size: cover;
 }
 
+.app-footer {
+  color: white;
+}
+
 .tech-news {
   opacity: 0.8;
   color: black;
+  margin: 20px;
 }
 
-.app-footer {
-  color: white;
+.tech-news a {
+  color: green;
+}
+
+.tech-news > .card {
+  padding: 15px;
 }
