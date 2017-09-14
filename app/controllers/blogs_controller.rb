@@ -9,11 +9,13 @@ class BlogsController < ApplicationController
   # GET /blogs.json
   def index
     if logged_in?(:site_admin)
-      @blogs = Blog.most_recent.page(params[:page]).per(2)
+      @blogs = Blog.most_recent.by_topic(params[:topic_id]).page(params[:page]).per(2)
     else
-      @blogs = Blog.published.most_recent.page(params[:page]).per(2)
+      @blogs = Blog.published.most_recent.by_topic(params[:topic_id]).page(params[:page]).per(2)
     end
   end
+
+
 
   def current_action_label
     if params[:action] == 'edit'
