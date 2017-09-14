@@ -6,10 +6,10 @@
   	on <%= blog.topic.title %> / Updated <%= distance_of_time_in_words(blog.updated_at, Time.now) %> ago
 	  <% if logged_in?(:site_admin) %>
 			<span class="pull-right">
-			  <%= link_to "#{blog.status} <i class='fa fa-exchange'></i>".html_safe, toggle_status_blog_path(blog), class: "breadcrumb-item" %>
-			  <%= link_to fa_icon('pencil'), edit_blog_path(blog), class: "breadcrumb-item" %>
+			  <%= link_to "#{blog.status} <i class='fa fa-exchange fa-lg'></i>".html_safe, toggle_status_blog_path(blog), class: "breadcrumb-item", style: status_color_helper(blog) %>
+			  <%= link_to fa_icon('pencil'), edit_blog_path(blog), class: "breadcrumb-item fa-lg" %>
 			  <%= link_to fa_icon('trash'), blog, method: :delete,
-			  						data: { confirm: 'Are you sure?' }, class: "breadcrumb-item" %>
+			  						data: { confirm: 'Are you sure?' }, class: "breadcrumb-item fa-lg" %>
 			</span>
 		<% end %>  
   </nav>
