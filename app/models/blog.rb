@@ -3,9 +3,11 @@ class Blog < ApplicationRecord
   extend FriendlyId
   friendly_id :title, use: :slugged
 
-  validates_presence_of :title, :body
+  validates_presence_of :title, :body, :topic_id
 
-  belongs_to :topic, optional: true
+  belongs_to :topic
 
   has_many :comments, dependent: :destroy
+
+  scope :most_recent, -> { order('updated_at DESC') }
 end

@@ -8,7 +8,11 @@ class BlogsController < ApplicationController
   # GET /blogs
   # GET /blogs.json
   def index
-    @blogs = Blog.order('updated_at DESC').page(params[:page]).per(2)
+    if logged_in?(:site_admin)
+      @blogs = Blog.most_recent.page(params[:page]).per(2)
+    else
+      @blogs = Blog.published.most_recent.page(params[:page]).per(2)
+    end
   end
 
   def current_action_label
