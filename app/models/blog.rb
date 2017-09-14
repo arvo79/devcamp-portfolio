@@ -14,10 +14,10 @@ class Blog < ApplicationRecord
   scope :only_published, -> { where(status: "published") }
 
  	def self.by_topic(param)
- 		if param != ""
-			where(:topic_id => param)
+ 		if param.to_i > 0
+      where(:topic_id => param)
 		else
-			all
+      all
 		end
 	end
 end

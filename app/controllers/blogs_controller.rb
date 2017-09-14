@@ -15,8 +15,6 @@ class BlogsController < ApplicationController
     end
   end
 
-
-
   def current_action_label
     if params[:action] == 'edit'
       'Update Blog'
@@ -100,6 +98,6 @@ class BlogsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def blog_params
-      params.require(:blog).permit(:title, :body, :topic_id)
+      params.require(:blog).permit(:title, :body, :topic_id, :status)
     end
 end

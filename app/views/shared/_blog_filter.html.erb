@@ -1,7 +1,8 @@
 <%= form_tag(blogs_path, method: :get) do %>
   <%= select_tag(:topic_id,
-  								options_for_select(Topic.all.collect{ |t| [t.title, t.id] }),
-                  { prompt: "All Topics" }
+  								options_for_select(Topic.all.collect{ |t| [t.title, t.id] }, selected: params['topic_id']),
+                  { prompt: "All Topics"
+                  }
                 	)
   %>
   <%= submit_tag 'Filter', class: "btn btn-success" %>
