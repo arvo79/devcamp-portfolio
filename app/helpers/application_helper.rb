@@ -2,11 +2,11 @@ module ApplicationHelper
 
   def nav_items
     [
-      { url: portfolios_path, title: "Portfolios" },
-      { url: blogs_path, title: "Blogs" },
-      { url: home_path, title: "Overview" },
+      { url: home_path, title: "Home" },
       { url: about_path, title: "About" },
       { url: contact_path, title: "Contact" },
+      { url: portfolios_path, title: "Portfolios" },
+      { url: blogs_path, title: "Blogs" },
       { url: tech_news_path, title: "Tech News" }
     ]
   end
