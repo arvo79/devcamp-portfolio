@@ -3,6 +3,7 @@
   <h2 class="blog-post-title"><%= link_to blog.title.upcase, blog %></h2>
   
   <p class="blog-post-meta">
+  	on <%= blog.topic.title %><br>
 	  Updated <%= distance_of_time_in_words(blog.updated_at, Time.now) %> ago
   	<% if logged_in? %>
   		by <%= current_user.name %>
