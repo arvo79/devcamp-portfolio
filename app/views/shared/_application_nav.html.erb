@@ -1,9 +1,17 @@
 <div class="masthead clearfix">
   <div class="inner">
-    <h3 class="masthead-brand">Felix Eichner</h3>
-    <nav class="nav nav-masthead">
-      <%= page_links "nav-link" %>
-	    <%= login_helper "nav-link" %>
+    <nav class="nav nav-masthead navbar-expand-lg navbar-dark">
+      <h3 class="masthead-brand">Felix Eichner</h3>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+	    	<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+		    <ul class="navbar-nav">
+		    	<%= page_links "nav-link" %>
+		    	<%= login_helper "nav-link" %>
+		    </ul>
+		   </div>
     </nav>
   </div>
 </div>
+

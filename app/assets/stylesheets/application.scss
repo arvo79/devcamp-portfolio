@@ -99,9 +99,6 @@ body {
   .masthead-brand {
     float: left;
   }
-  .nav-masthead {
-    float: right;
-  }
 }
 
 
@@ -165,16 +162,17 @@ body {
  * Custom styles
  */
 
-.masthead, {
+.masthead {
   background-color: rgba(1,1,1,.2);
   padding-bottom: 15px;
   border-radius: 5px;
 }
 
 .content-container {
+  position: relative;
   background-color: rgba(1,1,1,.4);
   padding: 40px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .center-content {
