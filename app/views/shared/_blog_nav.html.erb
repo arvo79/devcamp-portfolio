@@ -1,7 +1,15 @@
 <div class="blog-masthead">
 	<nav class="navbar navbar-expand-lg navbar-light">
 	  <a class="navbar-brand" href="#">Felix Eichner</a>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+	  <button
+	  	class="navbar-toggler"
+	  	type="button"
+	  	data-toggle="collapse"
+	  	data-target="#navbarNavDropdown"
+	  	aria-controls="navbarNavDropdown"
+	  	aria-expanded="false"
+	  	aria-label="Toggle navigation"
+	  >
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
 	  <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -22,7 +30,8 @@
 	        </div>
 	      </li>
 	      <li class="nav-link">
-	        <%= "<button class='btn btn-info' id='hide-button'>Hide/Show Head</button>".html_safe unless logged_in?(:site_admin) %>
+	        <%= "<button class='btn btn-info' id='hide-button'>Hide/Show Head</button>".html_safe 
+							unless logged_in?(:site_admin) %>
 	      </li>
 	    </ul>
 	  </div>

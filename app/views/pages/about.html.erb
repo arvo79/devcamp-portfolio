@@ -25,3 +25,18 @@
 	
 	</div>
 </div>
+<div class="skills col-md-9">
+	<% @skills.each do |skill| %>
+		<span class="progress">
+		<strong><%= skill.title %></strong>
+		 	<span class="progress-bar progress-bar-striped bg-warning"
+	  			 role="progressbar"
+	  			 style="width: <%= skill.percent_utilized %>%;"
+	  			 aria-valuenow="<%= skill.percent_utilized %>"
+	  			 aria-valuemin="0"
+	  			 aria-valuemax="100">
+	  			 <%= skill.percent_utilized %> %
+	  	</span>
+  	</span>
+	<% end %>
+</div>
