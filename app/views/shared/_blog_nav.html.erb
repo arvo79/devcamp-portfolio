@@ -1,8 +1,30 @@
 <div class="blog-masthead">
-  <div class="container">
-    <nav class="nav blog-nav">
- 	    <%= page_links "nav-link" %>
-	    <%= login_helper "nav-link" %>
-  	</nav>
-  </div>
+	<nav class="navbar navbar-expand-lg navbar-light">
+	  <a class="navbar-brand" href="#">Felix Eichner</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+	    <ul class="navbar-nav">
+	      <%= page_links "nav-link" %>
+	      <li class="nav-link">
+	      <form class="form-inline">
+	        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+	        <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+	      </form>
+	      </li>
+	      <li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          User Account
+	        </a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	          <%= login_helper "nav-link" %>
+	        </div>
+	      </li>
+	      <li class="nav-link">
+	        <%= "<button class='btn btn-info' id='hide-button'>Hide/Show Head</button>".html_safe unless logged_in?(:site_admin) %>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>
 </div>
