@@ -186,6 +186,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
  * Custom styles
  */
 
+.nav {
+  display: inline-grid;
+}
+
 .masthead {
   background-color: rgba(1,1,1,.2);
   padding-bottom: 15px;
@@ -268,4 +272,33 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
 .progress-bar {
   margin-left: 20px;
+}
+
+.animated-typing p{
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  animation: type 4s steps(60, end); 
+}
+
+.animated-typing p:nth-child(2){
+  animation: type2 8s steps(60, end);
+}
+
+.animated-typing span{
+  animation: blink 1s infinite;
+}
+
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 
+
+@keyframes blink{
+  to{opacity: .0;}
 }
