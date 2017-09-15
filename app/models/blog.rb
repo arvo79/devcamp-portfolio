@@ -10,4 +10,14 @@ class Blog < ApplicationRecord
   has_many :comments, dependent: :destroy
 
   scope :most_recent, -> { order('updated_at DESC') }
+
+  scope :only_published, -> { where(status: "published") }
+
+ 	def self.by_topic(param)
+ 		if param.to_i > 0
+      where(:topic_id => param)
+		else
+      all
+		end
+	end
 end

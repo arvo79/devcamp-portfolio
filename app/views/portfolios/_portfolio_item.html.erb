@@ -1,7 +1,9 @@
-<div class="card" data-id="<%= portfolio_item.id %>">
-  <p><%= link_to image_tag(portfolio_img(portfolio_item.thumb_image, 'thumb'), width:'100%'), portfolio_show_path(portfolio_item) unless portfolio_item.thumb_image.nil? %></p>
-  <p class="card-text">
-	  <p><strong><%= link_to portfolio_item.title, portfolio_show_path(portfolio_item) %></strong></p>
-		<p><%= portfolio_item.subtitle %></p>
-	</p>
+<div class="col-lg-3 col-md-4 col-sm-6">
+	<div class="card" data-id="<%= portfolio_item.id %>">
+	  <p><%= link_to image_tag(portfolio_img(portfolio_item.thumb_image, 'thumb'), width:'100%'), portfolio_show_path(portfolio_item) unless portfolio_item.thumb_image.nil? %></p>
+	  <p class="card-text">
+		  <p><strong><%= link_to portfolio_item.title, portfolio_show_path(portfolio_item) %></strong></p>
+			<p><%= portfolio_item.subtitle %></p>
+		</p>
+	</div>
 </div>

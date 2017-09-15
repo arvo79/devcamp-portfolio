@@ -9,9 +9,9 @@ class BlogsController < ApplicationController
   # GET /blogs.json
   def index
     if logged_in?(:site_admin)
-      @blogs = Blog.most_recent.page(params[:page]).per(2)
+      @blogs = Blog.most_recent.by_topic(params[:topic_id]).page(params[:page]).per(2)
     else
-      @blogs = Blog.published.most_recent.page(params[:page]).per(2)
+      @blogs = Blog.published.most_recent.by_topic(params[:topic_id]).page(params[:page]).per(2)
     end
   end
 
@@ -29,7 +29,11 @@ class BlogsController < ApplicationController
   # GET /blogs/1.json
   def show
     @blog = Blog.includes(:comments).friendly.find(params[:id])
-    @comment = Comment.new
+    if logged_in?(:site_admin) || @blog.published?
+      @comment = Comment.new
+    else
+      redirect_to blogs_path, notice: 'You are not authorized to access this page'
+    end
   end
 
   # GET /blogs/new
@@ -94,6 +98,6 @@ class BlogsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def blog_params
-      params.require(:blog).permit(:title, :body, :topic_id)
+      params.require(:blog).permit(:title, :body, :topic_id, :status)
     end
 end

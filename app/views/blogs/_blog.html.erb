@@ -2,23 +2,20 @@
 
   <h2 class="blog-post-title"><%= link_to blog.title.upcase, blog %></h2>
   
-  <p class="blog-post-meta">
-	  Updated <%= distance_of_time_in_words(blog.updated_at, Time.now) %> ago
-  	<% if logged_in? %>
-  		by <%= current_user.name %>
-  	<% end %>
-  </p>
-
-	<p class="blog-post-meta">
+  <nav class="breadcrumb blog-post-meta">
+  	on <%= blog.topic.title %> / Updated <%= distance_of_time_in_words(blog.updated_at, Time.now) %> ago
 	  <% if logged_in?(:site_admin) %>
-		  <%= link_to blog.status, toggle_status_blog_path(blog) %> /
-		  <%= link_to 'Edit', edit_blog_path(blog) %> /
-		  <%= link_to 'Delete Post', blog, method: :delete, data: { confirm: 'Are you sure?' } %>
-		<% end %>
-	</p>
+			<span class="pull-right">
+			  <%= link_to "#{blog.status} <i class='fa fa-exchange fa-lg'></i>".html_safe, toggle_status_blog_path(blog), class: "breadcrumb-item", style: status_color_helper(blog) %>
+			  <%= link_to fa_icon('pencil'), edit_blog_path(blog), class: "breadcrumb-item fa-lg" %>
+			  <%= link_to fa_icon('trash'), blog, method: :delete,
+			  						data: { confirm: 'Are you sure?' }, class: "breadcrumb-item fa-lg" %>
+			</span>
+		<% end %>  
+  </nav>
   
   <p class="blog-post">
-  	<%= simple_format(blog.body) %>
+  	<%= markdown blog.body %>
 	</p>
 
 </div>
